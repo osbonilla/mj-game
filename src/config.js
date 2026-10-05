@@ -1,23 +1,22 @@
 // ═══════════════════════════════════════════════════════════════
-//   ✏️  ARCHIVO DE PERSONALIZACIÓN
+//   ARCHIVO DE PERSONALIZACIÓN
 //   Todo lo que ella va a leer y ver se cambia desde aquí.
-//   Busca "✏️" para encontrar lo que conviene reemplazar.
-//   Los 1000 mensajes diarios están en: src/lib/data/mensajes.js
+//   Los mensajes diarios están en: src/lib/data/mensajes.js
 // ═══════════════════════════════════════════════════════════════
 
 export const config = {
   title: 'Nuestro pequeño universo',
   subtitle: 'Una pequeña aventura que solo tiene sentido porque existes tú',
 
-  // ✏️ Nombres
-  ella: 'MJ', //        ✏️ el nombre o apodo de ella
-  yo: 'Tu chico', //    ✏️ tu nombre o apodo
+  // Nombres
+  ella: 'MJ',
+  yo: 'Tu chico',
 
-  // ✏️ Fecha especial (aniversario). Formato AAAA-MM-DD. Déjalo en '' para ocultar el contador.
+  // Fecha especial (aniversario). Formato AAAA-MM-DD. Déjalo en '' para ocultar el contador.
   fechaEspecial: '2026-08-13',
   textoFecha: 'días a tu lado', // se muestra como "123 días a tu lado"
 
-  // ✏️ Colores de los personajes (pixel art)
+  // Colores de los personajes (pixel art)
   personajes: {
     ella: {
       skin: '#f0c09a',
@@ -35,7 +34,7 @@ export const config = {
     },
   },
 
-  // ✏️ Colores de la interfaz
+  // Colores de la interfaz
   colores: {
     acento: '#ffb3c7', //   rosa suave
     luz: '#ffd98a', //      luz cálida
@@ -43,8 +42,8 @@ export const config = {
     texto: '#fff8ef', //    blanco crema
   },
 
-  // ✏️ Música (opcional). Pon un archivo .mp3 en public/audio/ y escribe su nombre.
-  //    Si lo dejas vacío, el juego genera su propia música suave tipo 8 bits.
+  // Música (opcional). Pon un archivo .mp3 en public/audio/ y escribe su nombre.
+  // Si lo dejas vacío, el juego genera su propia música suave tipo 8 bits.
   musica: '', // ejemplo: 'audio/nuestra-cancion.mp3'
 
   // ── Pantalla de inicio ─────────────────────────────────────────
@@ -58,7 +57,7 @@ export const config = {
   intro: [
     'Había una vez un pequeño universo...',
     'No era muy grande. Tenía un camino, unas flores y un estanque.',
-    'Pero alguien lo construyó pixel a pixel, pensando en ti.',
+    'Pero alguien lo construyó con mucho cariño, pensando en ti.',
     'Al final del camino, hay alguien esperándote.',
   ],
 
@@ -70,7 +69,6 @@ export const config = {
   },
 
   // ── Letreros del camino: notitas románticas ──────────────────────
-  // Cada letrero es una notita. Puedes cambiar los textos libremente.
   letreros: [
     {
       id: 'letrero-1',
@@ -90,7 +88,7 @@ export const config = {
     {
       id: 'letrero-4',
       titulo: 'Bosquecito',
-      texto: '✏️ Escribe aquí algo que te encante de ella. (Ej: la forma en que se ríe cuando algo le da mucha gracia.)',
+      texto: 'Tus ojos marrones me enloquecen absolutamente. Podría perderme en ellos y no querer que me encuentren.',
     },
     {
       id: 'letrero-5',
@@ -101,32 +99,39 @@ export const config = {
 
   // ── Cofres: recuerdos ───────────────────────────────────────────
   // Sin fotos reales (el repositorio es público): cada recuerdo se muestra
-  // con una ilustración pixel art de los dos. (La carpeta public/fotos/ está en
-  // .gitignore para que ninguna foto se suba por accidente.)
+  // con una ilustración pixel art de los dos.
   cofres: [
     {
       id: 'cofre-1',
       objeto: 'Un dibujito guardado',
-      titulo: '✏️ Nuestro primer recuerdo',
-      fecha: '✏️ DD/MM/AAAA',
-      texto: '✏️ Escribe aquí cómo fue ese día. Lo que sentiste, lo que pensaste, lo que nunca le dijiste.',
-      foto: '', // sin foto: se muestra una ilustración
+      titulo: 'El día que empezó todo',
+      fecha: '13/08/2026',
+      texto:
+        'No sé explicar bien en qué momento pasó, pero un día me di cuenta de que mi lugar favorito ' +
+        'era cualquier lugar contigo. Desde entonces, todo tiene un poquito más de sentido.',
+      foto: '',
     },
     {
       id: 'cofre-2',
-      objeto: 'Un boleto doblado',
-      titulo: '✏️ Esa salida que no olvido',
-      fecha: '✏️ DD/MM/AAAA',
-      texto: '✏️ Cuenta aquí una anécdota bonita o graciosa de los dos.',
-      foto: '', // sin foto: se muestra una ilustración
+      objeto: 'Un boleto sin destino',
+      titulo: 'Todo lo que nos falta vivir',
+      fecha: '',
+      texto:
+        'Este boleto todavía no tiene destino. Lo guardo para todos los lugares a los que quiero ir contigo: ' +
+        'viajes, cafecitos nuevos, atardeceres bonitos y también los domingos sin planes, que contigo son los mejores.',
+      foto: '',
     },
     {
       id: 'cofre-3',
       objeto: 'Una nota escondida',
-      titulo: '✏️ Razones por las que te quiero',
+      titulo: 'Razones por las que te quiero',
       fecha: '',
-      texto: '✏️ 1. Escribe una razón.\n✏️ 2. Escribe otra.\n✏️ 3. Y una más, la más importante.',
-      foto: '', // sin foto: se muestra una ilustración
+      texto:
+        '1. Tu risa, que me arregla cualquier día.\n' +
+        '2. Lo bonita que eres, por fuera y sobre todo por dentro.\n' +
+        '3. Que contigo puedo ser yo mismo, sin miedo.\n' +
+        '4. Y la más importante: porque eres tú.',
+      foto: '',
     },
   ],
 
@@ -156,8 +161,7 @@ export const config = {
     ],
     preguntas: [
       {
-        // ✏️ Cambia la pregunta y las respuestas por algo vuestro
-        texto: '✏️ ¿Quién quiere más a quién?',
+        texto: '¿Quién quiere más a quién?',
         opciones: ['Ella a él', 'Él a ella', 'Empate técnico', 'Hugo a todos'],
         correcta: 1, // índice de la respuesta correcta (empieza en 0)
         fallos: [
@@ -167,7 +171,7 @@ export const config = {
         ],
       },
       {
-        texto: '✏️ ¿Qué es lo que él más disfruta de pasar tiempo contigo?',
+        texto: '¿Qué es lo que él más disfruta de pasar tiempo contigo?',
         opciones: ['La comida', 'Todo, literalmente todo', 'Las series', 'Que pierdas en los juegos'],
         correcta: 1,
         fallos: [
@@ -198,14 +202,19 @@ export const config = {
     ],
   },
 
-  // ── ✏️ CARTA FINAL ───────────────────────────────────────────────
+  // ── CARTA FINAL ─────────────────────────────────────────────────
   carta: {
-    titulo: 'Para ti',
+    titulo: 'Para ti, MJ',
     // Usa \n\n para separar párrafos.
     texto:
-      '✏️ Aquí va tu carta. Escríbela con calma, como si ella la fuera a leer muchas veces (porque lo va a hacer).\n\n' +
-      'Puedes contarle por qué hiciste este pequeño universo, qué sientes cuando la ves, qué sueñas con ella.\n\n' +
-      'No tiene que ser perfecta. Tiene que ser tuya.',
+      'Si llegaste hasta aquí, es porque recorriste todo este pequeño universo. Y quiero que sepas que cada flor, ' +
+      'cada letrero y cada estrella escondida los puse pensando en ti.\n\n' +
+      'No sé hacer muchas cosas perfectas, pero sí sé que quererte me sale solo. Me haces reír, me das calma ' +
+      'y haces que los días normales se sientan especiales. Contigo aprendí que el amor bonito sí existe.\n\n' +
+      'Gracias por elegirme, por tu paciencia, por tus abrazos y por esa forma tan tuya de hacerme sentir en casa.\n\n' +
+      'Este universo es pequeño, pero lo que siento por ti no cabe en ninguno. Y lo que más quiero es seguir ' +
+      'caminando a tu lado, por todos los caminos que nos falten.\n\n' +
+      'Te quiero muchísimo.',
     firma: 'Con todo mi amor,',
   },
 };
