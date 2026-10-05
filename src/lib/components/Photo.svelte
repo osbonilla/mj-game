@@ -15,7 +15,6 @@
     <img src={url} {alt} onerror={() => (failed = true)} />
   {:else if fallback}
     <img class="px" src={fallback} alt={alt ? `${alt} (ilustración)` : 'Ilustración'} />
-    {#if import.meta.env.DEV}<span class="note">✏️ Pon tu foto en public/{src || 'fotos/...'}</span>{/if}
   {/if}
 </div>
 

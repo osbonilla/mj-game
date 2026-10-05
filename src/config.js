@@ -10,7 +10,7 @@ export const config = {
   subtitle: 'Una pequeña aventura que solo tiene sentido porque existes tú',
 
   // ✏️ Nombres
-  ella: 'Amor', //      ✏️ el nombre o apodo de ella
+  ella: 'MJ', //        ✏️ el nombre o apodo de ella
   yo: 'Tu chico', //    ✏️ tu nombre o apodo
 
   // ✏️ Fecha especial (aniversario). Formato AAAA-MM-DD. Déjalo en '' para ocultar el contador.
@@ -99,17 +99,18 @@ export const config = {
     },
   ],
 
-  // ── Cofres: recuerdos con foto ───────────────────────────────────
-  // ✏️ Pon tus fotos en public/fotos/ y escribe aquí el nombre del archivo.
-  //    Si una foto no existe, se muestra un marco ilustrado en su lugar.
+  // ── Cofres: recuerdos ───────────────────────────────────────────
+  // Sin fotos reales (el repositorio es público): cada recuerdo se muestra
+  // con una ilustración pixel art de los dos. (La carpeta public/fotos/ está en
+  // .gitignore para que ninguna foto se suba por accidente.)
   cofres: [
     {
       id: 'cofre-1',
-      objeto: 'Una foto antigua',
+      objeto: 'Un dibujito guardado',
       titulo: '✏️ Nuestro primer recuerdo',
       fecha: '✏️ DD/MM/AAAA',
       texto: '✏️ Escribe aquí cómo fue ese día. Lo que sentiste, lo que pensaste, lo que nunca le dijiste.',
-      foto: 'fotos/recuerdo-1.jpg',
+      foto: '', // sin foto: se muestra una ilustración
     },
     {
       id: 'cofre-2',
@@ -117,7 +118,7 @@ export const config = {
       titulo: '✏️ Esa salida que no olvido',
       fecha: '✏️ DD/MM/AAAA',
       texto: '✏️ Cuenta aquí una anécdota bonita o graciosa de los dos.',
-      foto: 'fotos/recuerdo-2.jpg',
+      foto: '', // sin foto: se muestra una ilustración
     },
     {
       id: 'cofre-3',
@@ -125,7 +126,7 @@ export const config = {
       titulo: '✏️ Razones por las que te quiero',
       fecha: '',
       texto: '✏️ 1. Escribe una razón.\n✏️ 2. Escribe otra.\n✏️ 3. Y una más, la más importante.',
-      foto: 'fotos/recuerdo-3.jpg',
+      foto: '', // sin foto: se muestra una ilustración
     },
   ],
 

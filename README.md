@@ -45,7 +45,7 @@ Casi todo está en **`src/config.js`**. Busca el símbolo ✏️: marca lo que c
 | Colores de la interfaz               | `config.colores`                                              |
 | Frases de la introducción            | `config.intro`                                                |
 | Notitas de los 5 letreros            | `config.letreros`                                             |
-| Recuerdos con foto (3 cofres)        | `config.cofres` (título, fecha, texto y foto)                 |
+| Recuerdos de los 3 cofres            | `config.cofres` (título, fecha y texto)                       |
 | Frases de las 3 estrellas escondidas | `config.estrellas.frases`                                     |
 | Preguntas del gatito Hugo            | `config.pregunta.preguntas` (`correcta` empieza en 0)         |
 | Lo que dices al final                | `config.final.dialogo`                                        |
@@ -53,12 +53,10 @@ Casi todo está en **`src/config.js`**. Busca el símbolo ✏️: marca lo que c
 | Música                               | `config.musica` (ver abajo)                                   |
 | **Los 1000 mensajes diarios**        | `src/lib/data/mensajes.js`                                    |
 
-### Fotos
-1. Copia tus fotos a `public/fotos/` (por ejemplo `recuerdo-1.jpg`).
-2. En `config.cofres`, pon `foto: 'fotos/recuerdo-1.jpg'` (sin `/` al inicio).
-
-Si una foto no existe, el juego muestra una ilustración pixel art de ustedes dos en su lugar, así que nunca se rompe.
-Consejo: usa fotos de menos de 500 KB para que cargue rápido en el celular.
+### Sin fotos (privacidad)
+El proyecto no usa fotos reales: como el repositorio es público, cualquiera podría verlas.
+Cada recuerdo se muestra con una ilustración pixel art de los dos.
+Por seguridad, `public/fotos/` está en `.gitignore`, así que aunque copies una foto ahí por error, no se sube.
 
 ### Música
 Por defecto el juego genera su propia música suave 8-bit (y cambia a una melodía más emotiva en el final).
@@ -146,7 +144,6 @@ src/
     │   └── audio.js              música y efectos 8-bit (Web Audio)
     └── components/               menú, intro, mundo, diálogos, cofres, minijuegos, diario, carta…
 public/
-├── fotos/                        ✏️ tus fotos
 └── audio/                        ✏️ tu música (opcional)
 ```
 
