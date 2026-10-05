@@ -1,0 +1,3 @@
+Pon aquí tus fotos (recuerdo-1.jpg, recuerdo-2.jpg, recuerdo-3.jpg)
+o cambia los nombres en src/config.js → cofres → foto.
+Si una foto no existe, el juego muestra una ilustración en su lugar.

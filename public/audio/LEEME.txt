@@ -1,0 +1,3 @@
+Opcional: pon aquí un .mp3 (por ejemplo nuestra-cancion.mp3)
+y escribe en src/config.js → musica: 'audio/nuestra-cancion.mp3'
+Si no pones nada, el juego toca su propia música 8-bit.
