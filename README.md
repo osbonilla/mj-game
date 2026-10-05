@@ -133,7 +133,7 @@ src/
 ├── App.svelte                    escenas + transición tipo iris
 ├── app.css                       estilos globales, cristal (glassmorphism)
 └── lib/
-    ├── data/mensajes.js          ✏️ los 1000 mensajes
+    ├── data/mensajes.js          ✏️  mensajes
     ├── game/
     │   ├── engine.js             bucle, movimiento, colisiones, cámara, luces, final
     │   ├── world.js              mapa y todo el arte del escenario (dibujado en código)
