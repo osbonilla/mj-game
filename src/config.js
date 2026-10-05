@@ -14,7 +14,7 @@ export const config = {
   yo: 'Tu chico', //    ✏️ tu nombre o apodo
 
   // ✏️ Fecha especial (aniversario). Formato AAAA-MM-DD. Déjalo en '' para ocultar el contador.
-  fechaEspecial: '',
+  fechaEspecial: '2026-08-13',
   textoFecha: 'días a tu lado', // se muestra como "123 días a tu lado"
 
   // ✏️ Colores de los personajes (pixel art)
