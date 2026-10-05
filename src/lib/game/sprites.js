@@ -266,6 +266,6 @@ const OBJ = {
 };
 
 export function buildObjectSprite(name) {
-  const pal = { K: '#2a1b2d', O: '#e79b4f', W: '#fff4e6', P: '#f2a3b3' };
+  const pal = { K: '#2a1b2d', O: '#9da3ad', W: '#eef0f4', P: '#f2a3b3' }; // Hugo: gatito gris
   return rowsToCanvas(OBJ[name], pal);
 }
